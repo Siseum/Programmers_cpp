@@ -21,7 +21,5 @@ int solution(int n) {
         N=N*3;
     }
     
-    
-    
     return answer;
 }
