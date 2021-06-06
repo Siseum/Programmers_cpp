@@ -16,7 +16,7 @@ vector<int> solution(int n, int m) {
         m1=tempt;
     }
     
-    while(n1 !=0)
+    while(n1 != 0)
     {
         int tempt = m1%n1;
         m1=n1;
