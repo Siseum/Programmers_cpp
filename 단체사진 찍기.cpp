@@ -4,10 +4,10 @@
 using namespace std;
 
 int answer = 0;
-vector<char> v;
+
 bool check[8];
 
-void dfs(int Count, int n, vector<string> data)
+void dfs(int Count, int n, vector<string> data, vector<char> v)
 {
     if (Count == 8)
     {
@@ -89,16 +89,17 @@ void dfs(int Count, int n, vector<string> data)
             v.push_back('T');
 
         check[i] = true;
-        dfs(Count + 1, n, data);
+        dfs(Count + 1, n, data, v);
         check[i] = false;
         v.pop_back();
     }
 }
 
-int solution(int n, vector<string> data) 
+int solution(int n, vector<string> data)
 {
-    answer=0; //  **** 여기서 초기화 무조건 필수 ****
-    dfs(0, n, data);
-    
+    answer = 0; 
+    vector<char> v;
+    dfs(0, n, data, v);
+
     return answer;
 }
