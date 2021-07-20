@@ -5,7 +5,8 @@
 
 using namespace std;
 
-vector<int> solution(int n, vector<string> words) {
+vector<int> solution(int n, vector<string> words) 
+{
     vector<int> answer;
 
     unordered_map<string, int> m;
