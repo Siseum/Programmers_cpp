@@ -77,7 +77,6 @@ int solution(int m, int n, vector<string> board)
                     check[i].erase(check[i].begin() + j, check[i].begin() + j + 1 + Count);
                 }
             }
-
         }
     }
 
